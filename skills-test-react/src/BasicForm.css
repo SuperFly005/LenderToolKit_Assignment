@@ -1,0 +1,15 @@
+.todo-list-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.todo-list-form > div {
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.todo-list-form > div:nth-child(2) {
+    flex: 1;
+}
