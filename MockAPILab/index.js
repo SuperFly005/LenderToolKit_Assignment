@@ -3,6 +3,10 @@ const app = express();
 const port = 3000;
 const isLocal = true;
 
+// Set up the routes
+app.use("/loans", require("./routes/loans"));
+app.use("/borrowers", require("./routes/borrowers"));
+
 app.get('/', (req, res) => {
     res.json({
 		message: "✨ 👋🌏 ✨",
